@@ -1,5 +1,6 @@
 package com.example.application;
 
+import com.vaadin.base.devserver.util.BrowserLauncher;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
@@ -23,6 +24,7 @@ public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+        BrowserLauncher.launch("http://localhost:8080");
     }
 
 }
